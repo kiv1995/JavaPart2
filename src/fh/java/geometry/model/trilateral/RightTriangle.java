@@ -1,10 +1,9 @@
 package fh.java.geometry.model.trilateral;
 
-public class  RightTriangle extends TriangularShape {
+public class RightTriangle extends TriangularShape {
 
     private double sideA;
     private double sideB;
-
 
     public RightTriangle(int x, int y,double sideA, double sideB) {
         this.x=x;
@@ -12,26 +11,21 @@ public class  RightTriangle extends TriangularShape {
         this.sideA = sideA;
         this.sideB = sideB;
     }
-
     public double getSideA() {
         return sideA;
     }
-
     public void setSideA(double sideA) {
         this.sideA = sideA;
     }
-
     public double getSideB() {
         return sideB;
     }
-
     public void setSideB(double sideB) {
         this.sideB = sideB;
     }
-
     // TODO: Implement equals() and hashCode()
-
     @Override
+    //Berechnung von Fläche um Umfang
     public double calcArea() {
         return sideA*sideB/2;
     }
@@ -39,6 +33,9 @@ public class  RightTriangle extends TriangularShape {
     public double calcPerimeter() {
         return sideA+sideB+calcSideC();
     }
+    @Override
+    public double calculateVolume(){return 0;}
+    public double calculateSurfaceArea(){return 0;}
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -75,5 +72,4 @@ public class  RightTriangle extends TriangularShape {
     {
         return Math.sqrt(sideA*sideA+sideB*sideB);
     }
-
 }

@@ -33,6 +33,9 @@ public class Square extends QuadrangularShape {
     public double calcPerimeter() {
         return 2*sideA;
     }
+    @Override
+    public double calculateVolume(){return 0;}
+    public double calculateSurfaceArea(){return 0;}
     // TODO: Implement equals() and hashCode()
     @Override
     public boolean equals(Object o) {

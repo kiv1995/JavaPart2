@@ -17,9 +17,9 @@ public abstract class GeometricShape {
         this.y = y;
     }
 	public abstract double calcArea();
-
     public abstract double calcPerimeter();
-
+    public abstract double calculateVolume();
+    public abstract double calculateSurfaceArea();
    // TODO: Implement equals() and hashCode()
     @Override
     public boolean equals(Object o) {

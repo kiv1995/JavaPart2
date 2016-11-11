@@ -3,7 +3,12 @@ package fh.java.geometry;
 import fh.java.geometry.model.GeometricShape;
 import fh.java.geometry.model.curved.Circle;
 import fh.java.geometry.model.quadrilateral.Rectangle;
+import fh.java.geometry.model.quadrilateral.Trapeze;
+import fh.java.geometry.model.round.cone;
+import fh.java.geometry.model.round.spheric;
+import fh.java.geometry.model.sharp.pyramid;
 import fh.java.geometry.model.trilateral.RightTriangle;
+import fh.java.geometry.model.trilateral.Triangle;
 
 
 import java.util.*;
@@ -42,6 +47,14 @@ public class Main {
         shapeList.add(new Circle(1,2,3.1));
         shapeList.add(new Circle(1,2,3.2));
         shapeList.add(new Circle(1,2,3.5));
+        shapeList.add(new Circle(1,2,3.4));
+
+        shapeList.add(new Triangle(1,2,10,5,7,6));
+        shapeList.add(new Trapeze(1,2,10,5,3,5,4));
+        shapeList.add(new pyramid(1,2,10,15));
+        shapeList.add(new pyramid(1,2,10,15));
+        shapeList.add(new cone(1,2,3.5,5));
+        shapeList.add(new spheric(1,2,5.5));
 
         shapeList.add(new Rectangle(3,4,5.0,2.0));
         shapeList.add(new Rectangle(3,4,5.0,3.0));

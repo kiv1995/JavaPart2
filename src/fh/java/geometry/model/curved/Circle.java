@@ -2,31 +2,28 @@ package fh.java.geometry.model.curved;
 
 public class Circle extends CurvedShape {
     private double radius;
-
-    public Circle(int x, int y,double radius) {
-        this.x=x;
-        this.y=y;
+    public Circle(int x, int y, double radius) {
+        this.x = x;
+        this.y = y;
         this.radius = radius;
     }
-
     public double getRadius() {
         return radius;
     }
-
+    //Berechnung von Fläche und Umfang
     public void setRadius(double radius) {
         this.radius = radius;
     }
-
     @Override
     public double calcArea() {
-        return Math.PI*radius*radius;
+        return Math.PI * radius * radius;
     }
-
     @Override
     public double calcPerimeter() {
-        return 2*Math.PI*radius;
+        return 2 * Math.PI * radius;
     }
-
+    public double calculateVolume(){return 0;}
+    public double calculateSurfaceArea(){return 0;}
     // TODO: Implement equals() and hashCode()
     @Override
     public boolean equals(Object o) {
@@ -53,5 +50,4 @@ public class Circle extends CurvedShape {
         sb.append('}');
         return sb.toString();
     }
-
 }
